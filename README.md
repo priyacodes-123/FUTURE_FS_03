@@ -8,7 +8,6 @@ This project was designed for a real-world local café business concept to impro
 
 🔗 Add your GitHub Pages live website link here:
 
-https://yourusername.github.io/repository-name/
 💻 GitHub Repository
 
 🔗 Add your GitHub repository link here:
