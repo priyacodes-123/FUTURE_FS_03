@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Brew Heaven Café</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+</head>
+
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+
+  <header>
+
+    <nav class="navbar">
+
+      <h2 class="logo">Brew Heaven</h2>
+
+      <ul class="nav-links">
+
+        <li><a href="#">Home</a></li>
+
+        <li><a href="#about">About</a></li>
+
+        <li><a href="#menu">Menu</a></li>
+
+        <li><a href="#orders">Orders</a></li>
+
+        <li><a href="#reviews">Reviews</a></li>
+
+        <li><a href="#contact">Contact</a></li>
+
+      </ul>
+
+    </nav>
+
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+
+  <section class="hero">
+
+    <div class="hero-overlay">
+
+      <div class="hero-content">
+
+        <h1>Fresh Coffee, Cozy Moments ☕</h1>
+
+        <p>
+          Experience the perfect blend of taste and comfort.
+        </p>
+
+        <a href="#menu">
+
+          <button class="hero-btn">
+            Explore Menu
+          </button>
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+
+  <section class="about" id="about">
+
+    <h2>About Us</h2>
+
+    <p>
+      Brew Heaven Café is a peaceful and welcoming place
+      where coffee lovers enjoy handcrafted beverages,
+      desserts, and relaxing vibes.
+    </p>
+
+  </section>
+
+  <!-- ================= MENU SECTION ================= -->
+
+  <section class="menu" id="menu">
+
+    <h2>Our Special Menu ☕</h2>
+
+    <div class="menu-container">
+
+      <!-- ITEM 1 -->
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=500">
+
+        <h3>Cappuccino</h3>
+
+        <h4>₹149</h4>
+
+        <p>Rich espresso with creamy milk foam.</p>
+
+        <button class="order-btn"
+        data-item="Cappuccino"
+        data-price="149">
+
+        Order Now
+
+        </button>
+
+      </div>
+
+      <!-- ITEM 2 -->
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=500">
+
+        <h3>Cold Coffee</h3>
+
+        <h4>₹179</h4>
+
+        <p>Refreshing chilled coffee for every mood.</p>
+
+        <button class="order-btn"
+        data-item="Cold Coffee"
+        data-price="179">
+
+        Order Now
+
+        </button>
+
+      </div>
+
+      <!-- ITEM 3 -->
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?w=500">
+
+        <h3>egg noodles stir fry</h3>
+
+        <h4>₹199</h4>
+
+        <p>mild splice tasty meal.</p>
+
+        <button class="order-btn"
+        data-item="Chocolate Cake"
+        data-price="199">
+
+        Order Now
+
+        </button>
+
+      </div>
+
+      <!-- ITEM 4 -->
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1521305916504-4a1121188589?w=500">
+
+        <h3>Sandwich</h3>
+
+        <h4>₹129</h4>
+
+        <p>Crispy grilled sandwich with cheese.</p>
+
+        <button class="order-btn"
+        data-item="Sandwich"
+        data-price="129">
+
+        Order Now
+
+        </button>
+
+      </div>
+
+      
+      <!-- ITEM 6 -->
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=500">
+
+        <h3>raspberry cake</h3>
+
+        <h4>₹99</h4>
+
+        <p>Soft and colorful sweet cake.</p>
+
+        <button class="order-btn"
+        data-item="Donuts"
+        data-price="99">
+
+        Order Now
+
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= ORDERED ITEMS ================= -->
+
+  <section class="orders" id="orders">
+
+    <h2>Ordered Items 🛒</h2>
+
+    <div class="order-box">
+
+      <ul id="order-list">
+
+        <li>No items ordered yet</li>
+
+      </ul>
+
+    </div>
+
+  </section>
+
+  <!-- ================= BILL SECTION ================= -->
+
+  <section class="bill-section">
+
+    <h2>Total Bill 💳</h2>
+
+    <div class="bill-box">
+
+      Total Bill: ₹<span id="total">0</span>
+
+    </div>
+
+  </section>
+
+  <!-- ================= RATINGS & REVIEWS ================= -->
+
+  <section class="ratings-reviews" id="reviews">
+
+    <h2>Customer Ratings & Reviews ⭐</h2>
+
+    <!-- RATINGS -->
+
+    <div class="ratings-container">
+
+      <div class="rating-card">
+
+        <h3>Google</h3>
+
+        <p>⭐⭐⭐⭐⭐ 4.9/5</p>
+
+      </div>
+
+      <div class="rating-card">
+
+        <h3>Zomato</h3>
+
+        <p>⭐⭐⭐⭐⭐ 4.8/5</p>
+
+      </div>
+
+      <div class="rating-card">
+
+        <h3>Swiggy</h3>
+
+        <p>⭐⭐⭐⭐⭐ 4.7/5</p>
+
+      </div>
+
+    </div>
+
+    <!-- REVIEWS -->
+
+    <div id="review-container">
+
+      <div class="review-card">
+
+        <p>"Amazing ambience and delicious coffee!"</p>
+
+        <h4>- Priya</h4>
+
+      </div>
+
+      <div class="review-card">
+
+        <p>"Best café experience in town."</p>
+
+        <h4>- Sakshi</h4>
+
+      </div>
+
+    </div>
+
+    <!-- REVIEW FORM -->
+
+    <form class="review-form" id="review-form">
+
+      <input type="text"
+      id="review-name"
+      placeholder="Your Name"
+      required>
+
+      <textarea
+      id="review-text"
+      placeholder="Write your review"
+      required></textarea>
+
+      <button type="submit">
+        Submit Review
+      </button>
+
+    </form>
+
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+
+  <section class="contact" id="contact">
+
+    <h2>Contact Us</h2>
+
+    <div class="contact-container">
+
+      <div class="contact-info">
+
+        <p>
+          <i class="fa-solid fa-location-dot"></i>
+          Andhra Pradesh, India
+        </p>
+
+        <p>
+          <i class="fa-solid fa-phone"></i>
+          +91 9876543210
+        </p>
+
+        <p>
+          <i class="fa-solid fa-envelope"></i>
+          brewheaven@gmail.com
+        </p>
+
+      </div>
+
+      <form class="contact-form">
+
+        <input type="text" placeholder="Your Name">
+
+        <input type="email" placeholder="Your Email">
+
+        <textarea placeholder="Your Message"></textarea>
+
+        <button type="submit">
+          Send Message
+        </button>
+
+      </form>
+
+    </div>
+
+  </section>
+
+  <!-- ================= DELIVERY APPS ================= -->
+
+  <section class="delivery-apps">
+
+    <h2>Available On</h2>
+
+    <div class="apps-container">
+
+      <div class="app-card">
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Zomato_logo.png">
+
+        <h3>Zomato</h3>
+
+      </div>
+
+      <div class="app-card">
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Swiggy_logo.png">
+
+        <h3>Swiggy</h3>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer>
+
+    <p>
+      © 2026 Brew Heaven Café | Designed by Priya
+    </p>
+
+  </footer>
+
+  <!-- ================= JAVASCRIPT ================= -->
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
