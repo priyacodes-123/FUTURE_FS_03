@@ -6,13 +6,14 @@ This project was designed for a real-world local café business concept to impro
 
 🚀 Live Demo
 
-🔗 Add your GitHub Pages live website link here:
+🔗 Add your GitHub Pages live website link here: https://priyacodes-123.github.io/FUTURE_FS_03/
 
 💻 GitHub Repository
 
 🔗 Add your GitHub repository link here:
 
  https://github.com/priyacodes-123
+
 ✨ Project Features
 
 ✅ Professional and modern café website UI
